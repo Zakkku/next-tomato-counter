@@ -1,11 +1,15 @@
 import * as React from 'react';
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
+import { useState } from 'react';
 
 export default function BasicButtons() {
+
+    const [tomatoes, setTomatoes] = useState(0);
+
   return (
     <Stack spacing={2} direction="row">
-    <Button 
+    <Button onClick={() => setTomatoes(tomatoes - 1)}  
     sx={{
         background: '#edd9bb',
     color: 'tomato',
@@ -20,7 +24,7 @@ export default function BasicButtons() {
       },
       }}
     variant="outlined">-</Button>
-      <Button 
+      <Button onClick={() => setTomatoes(tomatoes + 1)}  
     sx={{
         background: '#edd9bb',
     color: 'tomato',
