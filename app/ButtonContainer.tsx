@@ -14,7 +14,7 @@ export default function ButtonContainer({ children }: OuterContainerProps) {
         <Container maxWidth="sm">
           <Box 
           sx={{
-            bgcolor: 'firebrick',
+            
             minHeight: '50px',
             display: 'flex',
             flexDirection: 'row', 
