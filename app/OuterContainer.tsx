@@ -16,7 +16,7 @@ export default function OuterContainer( {children}: OuterContainerProps) {
             bgcolor: 'tomato',
             minHeight: '100vh',
             display: 'flex',
-            flexDirection: 'column', // Make the container a column layout
+            flexDirection: 'column', 
             justifyContent: 'center', // Vertically center the content
             alignItems: 'center', // Horizontally center the content
           }} >
