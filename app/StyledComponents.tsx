@@ -1,12 +1,15 @@
-import * as React from 'react';
+import React from 'react';
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
-import { useState } from 'react';
 
-export default function BasicButtons() {
+interface BasicButtonsProps {
+  setTomatoes: React.Dispatch<React.SetStateAction<number>>;
+  tomatoes: number;
+}
 
-    const [tomatoes, setTomatoes] = useState(0);
 
+
+export default function BasicButtons({ setTomatoes, tomatoes }: BasicButtonsProps) {
   return (
     <Stack spacing={2} direction="row">
     <Button onClick={() => setTomatoes(tomatoes - 1)}  

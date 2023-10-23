@@ -3,11 +3,14 @@ import CssBaseline from '@mui/material/CssBaseline';
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 
-interface OuterContainerProps {
-    children: React.ReactNode;
-  }
+import BasicButtons from './StyledComponents';
 
-export default function ButtonContainer({ children }: OuterContainerProps) {
+interface ButtonContainerProps {
+  setTomatoes: React.Dispatch<React.SetStateAction<number>>;
+  tomatoes: number;
+}
+
+export default function ButtonContainer({ setTomatoes, tomatoes }: ButtonContainerProps) {
 
     
 
@@ -25,7 +28,7 @@ export default function ButtonContainer({ children }: OuterContainerProps) {
             alignItems: 'center', 
           }}
            >
-            {children}
+            <BasicButtons setTomatoes={setTomatoes} tomatoes={tomatoes} />
             </Box>
           
         </Container>
