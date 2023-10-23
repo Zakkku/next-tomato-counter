@@ -6,7 +6,8 @@ import Container from '@mui/material/Container';
 import BasicButtons from './StyledComponents';
 
 interface ButtonContainerProps {
-  setTomatoes: React.Dispatch<React.SetStateAction<number>>;
+  // setTomatoes: React.Dispatch<React.SetStateAction<number>>;
+  setTomatoes(v:number) : void;
   tomatoes: number;
 }
 

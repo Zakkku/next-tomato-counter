@@ -3,7 +3,8 @@ import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
 
 interface BasicButtonsProps {
-  setTomatoes: React.Dispatch<React.SetStateAction<number>>;
+  // setTomatoes: React.Dispatch<React.SetStateAction<number>>;
+  setTomatoes(v:number) : void;
   tomatoes: number;
 }
 
